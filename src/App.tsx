@@ -168,12 +168,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-[#0a0b10] via-[#11131a] to-[#0d1016] text-white">
       <header className="border-b border-white/10 bg-[#16181f]/70 backdrop-blur-xl">
         <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center space-x-3">
-            <Sparkles className="h-8 w-8 text-[#0A84FF]" />
-            <h1 className="bg-gradient-to-r from-white to-[#7dc4ff] bg-clip-text text-2xl font-bold text-transparent">
-              Gothic Ripple Converter
-            </h1>
-          </div>
+          <h1 className="text-2xl font-bold text-[#7dc4ff]">Gothic Ripple Converter</h1>
           <p className="mt-2 text-white/70">Transform your images with refined ripple effects</p>
         </div>
       </header>
