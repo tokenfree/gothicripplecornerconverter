@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import { Upload, Download, RotateCw, Waves, Sparkles } from 'lucide-react';
+import { Upload, Download, RotateCw, Waves } from 'lucide-react';
 
 function App() {
   const [image, setImage] = useState<HTMLImageElement | null>(null);
@@ -260,10 +260,7 @@ function App() {
           <div className="space-y-6">
             <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl">
               <div className="mb-4 flex items-center justify-between">
-                <h2 className="flex items-center text-xl font-semibold">
-                  <Sparkles className="mr-2 h-5 w-5 text-[#0A84FF]" />
-                  Preview
-                </h2>
+                <h2 className="text-xl font-semibold">Preview</h2>
                 {processedImage && (
                   <button
                     onClick={downloadImage}
@@ -295,7 +292,6 @@ function App() {
                   </div>
                 ) : (
                   <div className="text-center text-white/40">
-                    <Sparkles className="mx-auto mb-4 h-16 w-16 opacity-50" />
                     <p>Your gothic ripple effect will appear here</p>
                   </div>
                 )}
